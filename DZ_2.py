@@ -43,6 +43,7 @@ class Pasta:
     def __str__(self):
         return f"Паста: {self._type}, Соус: {self._sauce}, Начинка: {self._filling}, Добавки: {self._toppings}"
 
+
 class PastaBuilder:
     def __init__(self):
         self._pasta = Pasta()
@@ -70,7 +71,6 @@ class PastaBuilder:
     @sauce.setter
     def sauce(self, value):
         self._pasta.sauce = value
-
 
     @property
     def filling(self):
